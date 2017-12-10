@@ -12,6 +12,6 @@ Questa Repository contiene il codice sorgente, la demo e la relazione per il Pri
 
 > Nella Cartella Mat si trova l'eps e il file .fig del grafico prodotto da Matlab
 
-> Nella Cartella Dati si trova la spreedshet di Excel conteneti tutti i dati raccolti nelle 1000 prove effettuate
+> Nella Cartella Dati si trova la spreadsheet di Excel conteneti tutti i dati raccolti nelle 1000 prove effettuate
 
 
