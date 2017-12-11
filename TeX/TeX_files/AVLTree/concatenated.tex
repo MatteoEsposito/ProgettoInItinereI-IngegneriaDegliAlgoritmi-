@@ -1,0 +1,91 @@
+\begin{center}
+	\begin{tikzpicture}[level/.style={sibling distance=90mm/#1, inner sep=1, outer sep=1}]
+	\node [circle,draw] {40}
+	child {
+		node [circle,draw] {8}
+		child{node [circle,draw] {5}
+			child {
+				node [circle,draw] {2}
+				child {node [circle,draw] {1}
+				}
+				child {
+					node [circle,draw]{3}
+				}
+			}
+			child {node [circle,draw] {6}
+				child {node [circle,draw]  {4}
+				}
+				child {node [circle,draw]  {7}
+					child {node [circle, draw]  {7}} 
+					child [missing]
+				}
+			}
+		}
+		child {
+			node [circle,draw] {32} % Nodo R con suo Sotto-Albero
+			child {
+				node [circle,draw]{27}
+				child {node [circle,draw] {26}
+					child {node [circle,draw] {25}
+					}
+					child{node [circle,draw] {28}
+					}	
+				}
+				child{node [circle,draw] {30}
+					child {node [circle,draw] {29}
+					}
+					child{node [circle,draw] {31}
+					}	
+				}	
+			}
+			child {
+				node [circle,draw]{35}
+				child {node [circle,draw] {33}
+					child {node [circle,draw] {32}
+					}
+					child{node [circle,draw] {34}
+					}	
+				}
+				child{node [circle,draw] {38}
+					child {node [circle,draw] {37}
+					}
+					child{node [circle,draw] {39}
+					}	
+				}	
+			}
+		}
+	}
+	child {node [circle,draw] {41} % sotto-albero destro
+		child {
+			node [circle,draw]{44}
+			child {node [circle,draw] {43}
+				child {node [circle,draw] {42}
+				}
+				child{node [circle,draw] {45}
+				}	
+			}
+			child{node [circle,draw] {47}
+				child {node [circle,draw] {46}
+				}
+				child{node [circle,draw] {48}
+				}	
+			}	
+		}
+		child {
+			node [circle,draw]{51}
+			child {node [circle,draw] {50}
+				child {node [circle,draw] {49}
+				}
+				child{node [circle,draw] {53}
+				}	
+			}
+			child{node [circle,draw] {55}
+				child {node [circle,draw] {54}
+				}
+				child{node [circle,draw] {56}
+				}	
+			}	
+		}
+	};
+	\end{tikzpicture}
+\end{center}

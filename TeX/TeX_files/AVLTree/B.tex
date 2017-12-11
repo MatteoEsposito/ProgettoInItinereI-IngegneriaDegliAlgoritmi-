@@ -1,0 +1,70 @@
+
+\begin{tikzpicture}[level/.style={sibling distance=80mm/#1, inner sep=2, outer sep=2}]
+\node [circle,draw] {40}
+child {
+	node [circle,draw] {32} % sotto-albero sinistro
+	child {
+		node [circle,draw]{27}
+		child {node [circle,draw] {26}
+			child {node [circle,draw] {25}
+			}
+			child{node [circle,draw] {28}
+			}	
+		}
+		child{node [circle,draw] {30}
+			child {node [circle,draw] {29}
+			}
+			child{node [circle,draw] {31}
+			}	
+		}	
+	}
+	child {
+		node [circle,draw]{35}
+		child {node [circle,draw] {33}
+			child {node [circle,draw] {32}
+			}
+			child{node [circle,draw] {34}
+			}	
+		}
+		child{node [circle,draw] {38}
+			child {node [circle,draw] {37}
+			}
+			child{node [circle,draw] {39}
+			}	
+		}	
+	}
+}
+child {node [circle,draw] {41} % sotto-albero destro
+	child {
+		node [circle,draw]{44}
+		child {node [circle,draw] {43}
+			child {node [circle,draw] {42}
+			}
+			child{node [circle,draw] {45}
+			}	
+		}
+		child{node [circle,draw] {47}
+			child {node [circle,draw] {46}
+			}
+			child{node [circle,draw] {48}
+			}	
+		}	
+	}
+	child {
+		node [circle,draw]{51}
+		child {node [circle,draw] {50}
+			child {node [circle,draw] {49}
+			}
+			child{node [circle,draw] {53}
+			}	
+		}
+		child{node [circle,draw] {55}
+			child {node [circle,draw] {54}
+			}
+			child{node [circle,draw] {56}
+			}	
+		}	
+	}
+};
+
+\end{tikzpicture}

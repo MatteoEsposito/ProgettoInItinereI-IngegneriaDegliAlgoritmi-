@@ -1,0 +1,22 @@
+\begin{minipage}{0.5\linewidth}
+   	\begin{Verbatim}[frame=topline,numbers=left,label=Codice,framesep=5mm]
+    def searchLeftForNodeOfHeight(self, height):
+        curr = self.tree.root
+        while self.height(curr) != height 
+        and self.height(curr) != height+1: 
+            if curr.leftSon  == None:
+                break
+            else:
+                curr = curr.leftSon
+        if self.height(curr.leftSon) == height: 
+            return curr.leftSon                 
+        else:                                   
+            return curr
+        \end{Verbatim}
+\end{minipage}\hfill
+\begin{minipage}{0.395\linewidth}
+\ttfamily
+La funzione searchLeftForNodeOfHeight ricerca a sinistra di un dato albero un nodo che possegga altezza eguali o di una singola unità in più rispetto allìaltezza chiesta. Nella peggiore delle ipotesi l'algoritmo scenderà fino ad una foglia, in tal caso, il tempo di esecuzione di tale istanza sarà pari all'altezza dell'albero stesso che, grazie alle proprietà degli Alberi AVL, sar\'a pari al log(n)
+\end{minipage}
+\newline
+\newline

@@ -1,0 +1,34 @@
+	\begin{tikzpicture}[level/.style={sibling distance=80mm/#1, inner sep=2, outer sep=2}]
+	\node [circle,draw] {32} % sotto-albero sinistro
+	child {
+		node [circle,draw]{27}
+		child {node [circle,draw] {26}
+			child {node [circle,draw] {25}
+			}
+			child{node [circle,draw] {28}
+			}	
+		}
+		child{node [circle,draw] {30}
+			child {node [circle,draw] {29}
+			}
+			child{node [circle,draw] {31}
+			}	
+		}	
+	}
+	child {
+		node [circle,draw]{35}
+		child {node [circle,draw] {33}
+			child {node [circle,draw] {32}
+			}
+			child{node [circle,draw] {34}
+			}	
+		}
+		child{node [circle,draw] {38}
+			child {node [circle,draw] {37}
+			}
+			child{node [circle,draw] {39}
+			}	
+		}	
+	};
+	\end{tikzpicture}
+\end{center}

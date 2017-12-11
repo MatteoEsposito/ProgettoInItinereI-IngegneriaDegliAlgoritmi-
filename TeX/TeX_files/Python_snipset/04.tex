@@ -1,0 +1,17 @@
+ \begin{minipage}{0.5\linewidth}
+   	\begin{Verbatim}[frame=topline,numbers=left,label=Codice,framesep=5mm]
+   def getMaxNode(self):
+        curr = self.tree.root
+        while curr.rightSon != None:
+            curr = curr.rightSon
+        return curr
+        
+    \end{Verbatim}
+    \end{minipage}\hfill
+\begin{minipage}{0.405\linewidth}
+\ttfamily
+La funzione getMaxNode percorre la parte destra dell'albero fino a restituire il nodo più a destra Nella Peggiore delle Ipotesi, questo metodo consta di un'esecuzione temporale pari all'\emph{O(log(n))}, data che la peggiroe delle  ipotesi è che debba scendere per l'intero albero il quale, per via delle prorpietà degli AVL  ha un'altezza pari a log(n)
+
+\end{minipage}
+\newline	
+\newline

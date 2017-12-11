@@ -1,0 +1,22 @@
+\begin{center}
+	\begin{tikzpicture}[level/.style={sibling distance=80mm/#1}]
+	\node [circle,draw] {5}
+	child {
+		node [circle,draw] {2}
+		child {node [circle,draw] {1}
+		}
+		child {
+			node [circle,draw]{3}
+		}
+	}
+	child {node [circle,draw] {6}
+		child {node [circle,draw]  {4}
+		}
+		child {node [circle,draw]  {7}
+			child {node [circle, draw]  {7}} 
+			child {node [circle, draw]  {8}}
+		}
+	};
+	
+	\end{tikzpicture}
+\end{center}

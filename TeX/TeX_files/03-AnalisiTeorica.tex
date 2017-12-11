@@ -1,0 +1,31 @@
+\chapter{Analisi delle Prestazioni: Caso Peggiore}%: Ricordati di inserire anceh il caso uno dei due vuoto}
+\section{Analisi Teorica}
+L'analisi delle prestazioni, nel caso peggiore, consente di fatto di stabilire\'e quanto sia pi\'u o meno performante un dato algoritmo. L'analisi di questo algoritmo in particolare consta di diversi snipset di codice che contengono prevalentemente operazioni il cui tempo di esecuzione sia pari all'$O(log(n))$.
+\newline
+\newline
+
+\input{./TeX_files/Python_snipset/01} % Confronto Alberi
+
+\input{./TeX_files/Python_snipset/02} % Funzione getTreeHeight
+\newline 
+
+\paragraph{Attenzione:} per coerenza e continuità con quanto esposto prima nella descrizione dell'algoritmo continueremo con l'ipotesi che l'albero B sia più alto dell'albero A \newline\newline
+
+
+\input{./TeX_files/Python_snipset/03} % Ricerca Massimo
+
+
+\input{./TeX_files/Python_snipset/04} % Funzione getMaxNode
+
+\input{./TeX_files/Python_snipset/05} % Ricerca del Nodo R
+
+\input{./TeX_files/Python_snipset/06} % Funzione searchLeftForNodeOfHeight
+
+\input{./TeX_files/Python_snipset/07} % Creazione dell'albero temporaneo
+
+\input{./TeX_files/Python_snipset/08} % Innesto dell'albero Temporaneo
+
+\paragraph{Riepilogo:}
+Il codice così analizzato ha evidenziato il fatto che qualsiasi altra chiamata a funzioni nuove da me create per estender ancora di più la classe AVLDict, nello scenario della funzione principale \emph{concatenate} risultano costare tutte tempo logaritmico. Quindi l'analisi teorica ci conferma che l'algoritmo asintoticamente, quindi per grandi quantit\'a di dati, è un $O(log(n))$
+
+% \input{./TeX_files/Python_snipset/09} % Riepilogo

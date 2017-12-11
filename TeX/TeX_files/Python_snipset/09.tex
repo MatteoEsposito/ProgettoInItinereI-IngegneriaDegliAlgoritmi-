@@ -1,0 +1,66 @@
+\begin{minipage}{0.5\linewidth}
+\begin{Verbatim}[frame=topline,numbers=left,label=Codice,framesep=5mm]
+H_a = A.getTreeHeight()
+H_b = B.getTreeHeight()
+
+R_a = A.getMaxNode()
+R_av = A.value(R_a)
+
+A.delete(A.key(R_a))
+
+R_b = B.searchLeftForNodeOfHeight(H_a)
+
+if R_b.father == None:
+    isRoot = True
+    FtR_b = B.tree.root
+else:
+    isRoot = False
+    FtR_b = R_b.father
+
+R_bt = B.tree.cut(R_b)
+
+tempA = createAVLByArray([R_av])
+tempA.tree.insertAsLeftSubTree(tempA.tree.root,A.tree)
+tempA.tree.insertAsRightSubTree(tempA.tree.root, R_bt)
+
+tempA.updateHeight(tempA.tree.root)
+B.tree.insertAsLeftSubTree(FtR_b, tempA.tree)
+
+B.balInsert(FtR_b.leftSon)
+
+return B
+    
+  \end{Verbatim}
+\end{minipage}\hfill
+\begin{minipage}{0.39\linewidth}
+\begin{Verbatim}
+0(1)
+0(1)
+
+0(1)
+0(1)
+
+
+0(1)
+
+0(log(n))
+
+
+
+
+
+
+
+
+
+
+
+0(log(n))
+0(1)
+
+
+0(log(n))
+\end{Verbatim}
+\end{minipage}
+\newline
+\newline

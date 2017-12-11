@@ -1,0 +1,30 @@
+ \begin{minipage}{0.45\linewidth}
+	\begin{Verbatim}[frame=topline,numbers=left,label=Codice,framesep=5mm]
+ tempA = createAVLByArray([R_av])
+ tempA.tree.insertAsLeftSubTree(tempA.tree.root,A.tree)
+ tempA.tree.insertAsRightSubTree(tempA.tree.root, R_bt)
+ tempA.updateHeight(tempA.tree.root)
+     \end{Verbatim}
+    \end{minipage}\hfill
+\begin{minipage}{0.47\linewidth}
+\begin{Verbatim}
+	Ora l'agoritmo crea un nuovo albero 
+	temporaneo, la funzione 
+	createAVLByArray, nella peggiore 
+	delle ipotesi impiega un tempo lineare 
+	all'input, ma in questo particolare caso 
+	la peggiore delle ipotesi è irrealizzabile
+	infatti creando un albero di un singolo
+	elemento, impiegherà tempo costante. 
+	O(1)) l'inserimento come figlio sinistro
+	e destro invece  constano anch'essi 
+	di operazioni di tempo costante.
+	Quindi ne aggiorna l'altezza, tale 
+	operazione può essere fatta in tempi
+	costanti ma nella peggiore delle ipotesi
+	può richidere tempo logaritmico
+
+\end{Verbatim}
+\end{minipage}
+\newline
+\newline
