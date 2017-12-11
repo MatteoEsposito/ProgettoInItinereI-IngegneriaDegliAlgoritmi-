@@ -31,13 +31,15 @@ def benchmark(n):
 def doTest(i, elements,diff, dir):
     """
     Funzione usata per fare il benchmarking,
-    data la natura del'algoritmo e la rischietsa di generare in runtime degli alberi AVL
-    ho considerato "migliroe" lo spezzare il codice in due framemtni in cui viene semplicemente calcoalta il
-    SOLO tempo di esecuzione dell'algoritmo e non anche della creazioen dell'albero AVL
+    data la natura del'algoritmo e la richiesta di generare in runtime degli alberi AVL
+    ho considerato come scelta "migliore" lo spezzare il codice in due frammenti in cui
+    viene semplicemente calcolato il SOLO tempo di esecuzione dell'algoritmo e non
+    anche della creazione degli alberi AVL
     :param i: i-esima iterazione
     :param elements: elementi dell'albero più basso
-    :param diff: numero di elementi in più rispetto all'albero più basso
-    :param dir: A > B o B > A
+    :param diff: numero di elementi da aggiungrìere in più all'albero più alto rispetto all'albero più basso
+    :param dir: 0: A più alto di B
+                1: B più alto di A
     :return: None
     """
     global A, B
