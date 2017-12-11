@@ -4,7 +4,7 @@
 Questa Repository contiene il codice sorgente, la demo e la relazione per il Primo Progetto In Itinere del Corso di *Ingegneria degli Algoritmi*.
 
 ## Descrizione Repository
-> Nella radice della Repository si puà trovare il PDF della Relazione.
+> Nella radice della Repository si trova il PDF della Relazione.
 
 > Nella Cartella Python si trova l'intero algoritmo ( conenuto nella classe ProjUtilities.py ) e la demo contenuta nel file main.py
 
