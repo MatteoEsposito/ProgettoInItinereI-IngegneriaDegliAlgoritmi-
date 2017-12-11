@@ -70,7 +70,7 @@ if __name__ == "__main__":
 
     if C == 0:
 
-        A, B = generateRandomAVLTree(0, 20000, 100, 300, 1)
+        A, B = generateRandomAVLTree(0, 20000, 100, 300, 0)
         C = concatenate(A, B)
         if DEBUG | RELEASE:
              print("\n \n Albero Concatenato \n \n ")

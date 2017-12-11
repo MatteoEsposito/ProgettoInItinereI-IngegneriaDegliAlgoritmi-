@@ -15,7 +15,7 @@ def createAVLByArray(array):
 
     :Time: O(n)
     :param array: Array of integers
-    :return: AVL TREE
+    :return: ExtendedAVL - AVL Tree
     '''
     avl = ExtendedAVL()
     for i in range(len(array)):
@@ -30,7 +30,8 @@ def generateAVLBYRandomSeeding(start, end, n):
     :param start: int - inzio del range dal quale generare i numeri
     :param end: int - fine del range dal quale generare i numeri
     :param n: quantità di numeri da restituire nell'array
-    :return: DictAVLTree
+    :Time: O(n)
+    :return: ExtendedAVL - AVL Tree
     """
 
     try:
@@ -42,16 +43,19 @@ def generateAVLBYRandomSeeding(start, end, n):
 
 def generateRandomAVLTree(start,end,n,diff,maj):
     """
-    Classe usata per generare una coppia Albero AVL da numeri pseudo-randomizzati che differiscoo per:
+    Classe usata per generare una coppia Albero AVL da numeri pseudo-randomizzati che differiscono per:
     > Una certa quantità diff di elementi
     > Un Albero ha chiavi tutte maggiori del secondo e/o viceversa
 
     :param start: int - inzio del range dal quale generare i numeri
     :param end: int - fine del range dal quale generare i numeri
     :param n: quantità di numeri da restituire nell'array
-    :param diff:
-    :param maj:
-    :return:
+    :param diff: quantita di elementi di differenza tra albero più alto e più basso, la differenza viene aggiunta allo
+                 albero più alto
+    :param maj: 0: A più alto di B;
+                1: B più alto di A;
+    :Time: O(n)
+    :return: Tuple( ExtendedAVL - AVL Tree (A), ExtendedAVL - AVL Tree  (B), )
     """
 
     if maj==0 :
@@ -75,6 +79,7 @@ def concatenate(A, B):
     Bilanciato e Concatenato
     :param A: ExtendedAVL - AVL Tree con chiavi tutte minori di B
     :param B: ExtendedAVL - AVL Tree con chiavi tutte maggiori di A
+    :Time: O(log(n))
     :return:  ExtendedAVL - AVL Tree ( Concatenato )
     """
 
