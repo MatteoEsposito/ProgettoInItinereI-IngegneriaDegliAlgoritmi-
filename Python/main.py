@@ -64,7 +64,7 @@ if __name__ == "__main__":
     # 1: Benchmarking dell'algoritmo
     #
 
-    C = 1     # Modificare questo valore per accedere ai due diversi ambienti di Testing
+    C = 0     # Modificare questo valore per accedere ai due diversi ambienti di Testing
               # Per Avere una Verbosità maggiore nei risultati aggiustare i realtivi FLAG
               # nel file settings.py nella cartella lib ( di Default essi sono settati su FALSE )
 
